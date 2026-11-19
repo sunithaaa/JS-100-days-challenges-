@@ -14,3 +14,6 @@ const searchText = "pizza";
 const minRating = 4.3;
 const maxPrice = 300;
 const sortBy = "price"; // "price" or "rating"
+
+const outputArray = restaurants
+    
