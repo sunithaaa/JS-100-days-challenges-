@@ -9,6 +9,7 @@
 // becomes:
 // my-first-javascript-tutorial
 
+
 const articleTitles = [
   "My First JavaScript Tutorial",
   "  React Hooks Explained  ",
