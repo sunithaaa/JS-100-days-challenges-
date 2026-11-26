@@ -1,0 +1,25 @@
+{
+  "name": "js-100-days-challenges-",
+  "version": "1.0.0",
+  "description": "challenges on JavaScript covering all topics from basics to advanced",
+  "main": "chalenge3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunithaaa/JS-100-days-challenges-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sunithaaa/JS-100-days-challenges-/issues"
+  },
+  "homepage": "https://github.com/sunithaaa/JS-100-days-challenges-#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}
