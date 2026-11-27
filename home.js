@@ -36,15 +36,50 @@ export function renderProductCards() {
    displayEachProduct(products)
 
 
-   searchInput.addEventListener("input", (e) => {
-      const searchText = e.target.value.toLowerCase().trim();
+ let timer;
 
-      const filteredProducts = products.filter((prod) => {
-         return prod.name.toLowerCase().includes(searchText) ||
-            prod.category.toLowerCase().includes(searchText)
+// searchInput.addEventListener("input", (e) => {
 
+//     clearTimeout(timer);
 
-      })
-      displayEachProduct(filteredProducts)
-   })
+//     timer = setTimeout(() => {
+
+//         console.log("Search executed after 500ms");
+
+//         const searchText = e.target.value.toLowerCase().trim();
+
+//         console.log("Search text:", searchText);
+
+//         const filteredProducts = products.filter((prod) => {
+//             return (
+//                 prod.name.toLowerCase().includes(searchText) ||
+//                 prod.category.toLowerCase().includes(searchText)
+//             );
+//         });
+
+//         console.log("Filtered products:", filteredProducts);
+
+//         displayEachProduct(filteredProducts);
+
+//     }, 500);
+//     console.log("timererrr",timer)
+  
+// });
+
+searchInput.addEventListener("input",(e)=>{
+   clearTimeout(timer);
+
+   timer = setTimeout(()=>{
+     const searchText = e.target.value.toLowerCase().trim();
+
+     const filteredPRoducts = products.filter((prod)=>{
+      return (
+         prod.name.toLowerCase().includes(searchText) ||
+         prod.category.toLowerCase().includes(searchText)
+      )
+
+     })
+     displayEachProduct(filteredPRoducts)
+   },3000)
+})
 }
