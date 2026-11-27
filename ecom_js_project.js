@@ -1,2 +1,3 @@
-import {home} from "./home.js"
+import {renderProductCards} from "./home.js"
 
+renderProductCards()
